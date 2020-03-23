@@ -32,8 +32,8 @@ Your method would return:
 
 ### Solution
 
-![MeetingChecker]()
+![MeetingChecker](https://github.com/BenSheridanEdwards/Meeting_Check_Challenge_Ruby/blob/master/media/MeetingCheckerRubyCode.png)
 
 ### Unit Tests
 
-![MeetingCheckerSpec]()
+![MeetingCheckerSpec](https://github.com/BenSheridanEdwards/Meeting_Check_Challenge_Ruby/blob/master/media/MeetingCheckerRSpecTesting.png)
