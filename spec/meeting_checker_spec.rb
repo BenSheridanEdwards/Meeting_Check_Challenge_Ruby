@@ -2,7 +2,6 @@ require_relative './../lib/meeting_checker.rb'
 
 describe MeetingChecker do
 
-  let(:Checker) { MeetingChecker.new }
   let(:meetings) { [[0, 1], [3, 5], [4, 8], [10, 12], [9, 10]] }
 
   it 'accepts an array of meetings with no overlap and returns/outputs that same array' do
@@ -11,6 +10,10 @@ describe MeetingChecker do
 
   it 'accepts an array of meetings with one overlap and returns the two overlapped meetings as one meeting' do
     expect(subject.availability([[0, 1], [3, 5], [4, 8], [10, 12]])).to eq [[0, 1], [3, 8], [10, 12]]
+  end
+
+  it 'accepts an array of meetings with two overlaps and returns the four overlapped meetings as two meetings' do
+    expect(subject.availability([[0, 1], [3, 5], [4, 8], [10, 12], [9, 10]])).to eq [[0, 1], [3, 8], [9, 12]]
   end
 
 end
