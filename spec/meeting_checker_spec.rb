@@ -14,4 +14,7 @@ describe MeetingChecker do
     expect(subject.availability([[0, 1], [3, 5], [4, 8], [10, 12], [9, 10]])).to eq [[0, 1], [3, 8], [9, 12]]
   end
 
+  it 'accepts an array of meetings where one meeting subsumes the rest, and return only that one meeting' do
+    expect(subject.availability([[1, 10], [2, 6], [3, 5], [7, 9]])).to eq [[1, 10]]
+  end
 end
