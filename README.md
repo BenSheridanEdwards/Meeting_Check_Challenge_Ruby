@@ -30,3 +30,10 @@ Your method would return:
 
 - When a meeting starts before and ends after another meeting, it should correctly subsume that meeting. 
 
+### Solution
+
+![MeetingChecker]()
+
+### Unit Tests
+
+![MeetingCheckerSpec]()
