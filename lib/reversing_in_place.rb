@@ -1,0 +1,3 @@
+class InPlace
+
+end
