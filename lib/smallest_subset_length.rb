@@ -22,7 +22,7 @@ class Subset
       high_frequency_keys << key if value == max_frequency 
     }
   
-    # 
+    # Find the smallest subset length
     high_frequency_keys.each { |key|
       key_index_array = indice_hash[key]
       subset = key_index_array[-1] - key_index_array[0]
