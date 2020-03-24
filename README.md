@@ -98,7 +98,7 @@ For example, when given:
 path = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 runs = [2, 7, 3, 9, 1, 5]
 
-method(runs, path)
+method(path, runs)
 ```
 
 Your method should return:
@@ -114,6 +114,8 @@ Your method should return:
 ### Solution
 
 ![RunPath Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRubyCode.png)
+
+![RunPath Editor](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRubyEditor.png)
 
 ### Unit Tests
 
