@@ -1,6 +1,8 @@
-# Meeting Checker - Ruby Challenge
+# Ruby Data Structure Challenges - Arrays & Strings
 
-## Challenge Description
+## Meeting Checker
+
+### Challenge Description
 
 Your company has built an in-house calendar tool, and they want you to add a feature to see the times in a day when everyone is available. 
 
@@ -37,3 +39,25 @@ Your method would return:
 ### Unit Tests
 
 ![MeetingCheckerSpec](https://github.com/BenSheridanEdwards/Meeting_Check_Challenge_Ruby/blob/master/media/MeetingCheckerRSpecTesting.png)
+
+<br>
+
+## Reversing In-Place
+
+### Description 
+Write a method that takes an array or string and reverses the elements in place.
+
+### Things to keep in mind
+
+- An in-place method modifies data structures or objects outside of its own stack frame. Because of this, the changes made by the method remain after the call completes.
+  - In-place algorithms are sometimes called destructive, since the original input is "destroyed" (or modified) during the method call.
+  - Careful: "In-place" does not mean "without creating any additional variables!" Rather, it means "without creating a new copy of the input." In general, an in-place method will only create additional variables that are O(1)O(1) space.
+- An out-of-place method doesn't make any changes that are visible to other methods. Usually, those methods copy any data structures or objects before manipulating and changing them.
+- The elements is the string/array input will be letters, numbers or a mixture of both.
+
+
+### Solution
+
+
+### Unit Tests
+
