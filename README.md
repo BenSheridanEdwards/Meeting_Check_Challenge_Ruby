@@ -16,7 +16,7 @@ For example, given:
 [[0, 1], [3, 5], [4, 8], [10, 12], [9, 10]]
 ```
 
-Your method would return:
+Your method should return:
 
 ```
 [[0, 1], [3, 8], [9, 12]]
@@ -46,6 +46,28 @@ Your method would return:
 
 ### Description 
 Write a method that takes an array or string and reverses the elements in place.
+
+For example, given a string: 
+
+```
+"ABCDE"
+```
+
+Your method should return:
+
+```
+"EDCBA"
+```
+
+Also, when given an array: 
+```
+["A", "B", "C", "D", "E"]
+```
+
+Your method should return:
+```
+["E", "D", "C", "B", "A"]
+```
 
 ### Things to keep in mind
 
