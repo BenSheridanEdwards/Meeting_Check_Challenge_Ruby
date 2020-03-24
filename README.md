@@ -86,3 +86,36 @@ Your method should return:
 ### Unit Tests
 
 ![Reversing Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRSpecTesting.png)
+
+## Run Path
+
+### Description 
+
+Given the length of a path and a set of back and forth runs on this path, return the position on the path that is visited most often at the end of all runs. If there are multiple positions that meet this criterion, return the lowest position. 
+
+For example, when given:
+```
+path = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+runs = [2, 7, 3, 9, 1, 5]
+
+method(runs, path)
+```
+
+Your method should return:
+```
+3
+```
+### Explaination
+
+- The set of runs translates to: start at 2, run to 7; start at 7, run to 3; start at 3, run to 9; start at 9, run to 1; start at 1, run to 5. 
+- Note that each position is visited once when the run ends there and once when the run starts there, so for example when you run from 2 to 7 and then from 7 to 3, you have visited 7 twice. 
+- Given the above example, positions 3, 4 and 5 would all have been visited 5 times, which is the largest number of visits, but the program should return the lowest such positions, which is 3.
+
+### Solution
+
+![RunPath Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRubyCode.png)
+
+### Unit Tests
+
+![RunPath Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRSpecTesting.png)
+
