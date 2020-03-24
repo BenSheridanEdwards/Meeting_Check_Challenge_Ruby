@@ -23,5 +23,4 @@ class RunPath
     end
     return positions.key(positions.values.max)
   end
-
 end
