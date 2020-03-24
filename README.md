@@ -57,9 +57,10 @@ Write a method that takes an array or string and reverses the elements in place.
 
 - The elements is the string/array input will be letters, numbers or a mixture of both.
 
-
 ### Solution
 
+![Reversing Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRubyCode.png)
 
 ### Unit Tests
 
+![Reversing Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRSpecTesting.png)
