@@ -145,8 +145,8 @@ The two subsets with the same degree as the original set are {1, 2, 2, 2, 3, 4, 
 
 ### Solution
 
-![Smallest Subset Length Code]()
+![Smallest Subset Length Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/SmallestSubsetLengthCode.png)
 
 ### Unit Tests
 
-![Smallest Subset Length Testing]()
+![Smallest Subset Length Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/SmallestSubsetLengthRSpecTesting.png)
