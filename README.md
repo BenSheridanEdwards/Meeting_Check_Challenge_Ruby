@@ -121,3 +121,32 @@ Your method should return:
 
 ![RunPath Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRSpecTesting.png)
 
+## Smallest Subset Length
+
+### Description
+
+For a set of numbers, the degree of the set is the largest number of occurrences of the same element. In the given example below, the degree is 3 as both element 1 and element 2 occur 3 times each.
+
+Given a set of numbers, return the length of the smallest subset that has the same degree as the original set.
+
+For example, for a given set: 
+```
+Set = [1, 2, 2, 2, 3, 4, 1, 5, 1, 6]
+```
+
+Your method should return:
+```
+3
+```
+
+### Explaination
+
+The two subsets with the same degree as the original set are {1, 2, 2, 2, 3, 4, 1, 5, 1} and {2, 2, 2}. The first subset is 9 elements long and the second one is 3 elements long, so the program should return 3.
+
+### Solution
+
+![Smallest Subset Length Code]()
+
+### Unit Tests
+
+![Smallest Subset Length Testing]()
