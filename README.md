@@ -202,7 +202,7 @@ So when we write our conditional statements, we'll have to have 4 cases, 2 to ch
 
 ### Solution
 
-![Girl Scout Cookies Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRubyCode.png)
+![Girl Scout Cookies Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRubyCodeDRY.png)
 
 ### Unit Tests
 
