@@ -4,15 +4,15 @@ Table of Contents
 
 ### [Arrays]()
 
-[Meeting Checker]() | [Smallest Subset Length]() | [Girl Scout Cookie Orders]()
+[Meeting Checker](#Meeting-Checker) | [Smallest Subset Length](#Smallest-Subset-Length) | [Girl Scout Cookie Orders](#Girl-Scout-Cookie-Orders)
 
 ### [Strings]()
 
-[Reversing In-Place]()
+[Reversing In-Place](#Reversing-In-Place)
 
 ### [Hashes]()
 
-## Meeting Checker
+## <a name="Meeting-Checker">Meeting Checker</a>
 
 ### Challenge Description
 
@@ -54,7 +54,7 @@ Your method should return:
 
 <br>
 
-## Reversing In-Place
+## <a name="Reversing-In-Place">Reversing In-Place</a>
 
 ### Description 
 Write a method that takes an array or string and reverses the elements in place.
@@ -133,7 +133,7 @@ Your method should return:
 
 ![RunPath Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRSpecTesting.png)
 
-## Smallest Subset Length
+## <a name="Smallest-Subset-Length">Smallest Subset Length</a>
 
 ### Description
 
@@ -163,7 +163,7 @@ The two subsets with the same degree as the original set are {1, 2, 2, 2, 3, 4, 
 
 ![Smallest Subset Length Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/SmallestSubsetLengthRSpecTesting.png)
 
-## Girl Scout Cookie Orders
+## <a name="Girl-Scout-Cookie-Orders">Girl Scout Cookie Orders</a>
 
 ### Description
 
