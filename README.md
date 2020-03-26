@@ -1,4 +1,16 @@
-# Ruby Data Structure Challenges - Arrays & Strings
+# Ruby Data Structure Challenges
+
+Table of Contents 
+
+### [Arrays]()
+
+[Meeting Checker]() | [Smallest Subset Length]() | [Girl Scout Cookie Orders]()
+
+### [Strings]()
+
+[Reversing In-Place]()
+
+### [Hashes]()
 
 ## Meeting Checker
 
