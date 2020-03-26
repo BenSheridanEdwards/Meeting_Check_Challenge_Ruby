@@ -176,6 +176,30 @@ Your method should output:
 
 ```
 
+### Explaination
+
+We could concatinate the arrays together, then sort the result: 
+
+![Girl Scout Cookie Order Simple Solution]()
+
+But the time cost would be O(n lg n), where n is the total length of our output array, the sum of the length of our inputs. 
+
+We can do better than this though, as we're not taking advantage of the face the input arrays are *already sorted*. 
+
+We know since our arrays are sorted, the smallest item for each input array will be at the 0th index. So the smallest item overall will be a the 0th index of one of our input arrays!
+
+If we push the smallest number at the 0th index from both arrays into our merged arrays, we can always use the 0th index to find our smallest number between both arrays. 
+
+But we have a few problems when we consider our Edge cases: 
+
+1. What if one or both our input arrays are 1 element or less? 
+2. What if one of our input arrays is longer than the other?
+3. What if one of our arrays runs out of elements before we're done merging the other?
+
+For all these edge cases, there will be a point when the 0th value on one of our input arrays will be nil. So we'll get a NoMethodError for calling 'less than' on nil - Or an Argument Error for calling 'less than' on an integer but passing nil as an argument. 
+
+So when we write our conditional statements, we'll have to have 4 cases, 2 to check which item is next from the 0th index of each array, and 2 to check if either array is exhausted.
+
 ### Solution
 
 ![Girl Scout Cookies Code]()
