@@ -16,11 +16,21 @@ describe InflightEntertainment do
 
   context 'when there is only movie or no movies to fill the flight time' do
     it 'evaluates the movie length of [6] for a 6 hour flight, and returns false' do
-      expect(subject.can_two_movies_fill_flight?([2, 4], 1)).to eq false
+      expect(subject.can_two_movies_fill_flight?([6], 6)).to eq false
     end
 
     it 'evaluates no movies [] for a 2 hour flight, and returns false' do
-      expect(subject.can_two_movies_fill_flight?([2, 4], 1)).to eq false
+      expect(subject.can_two_movies_fill_flight?([], 2)).to eq false
+    end
+  end
+
+  context 'when there is movie/s half the flight length' do
+    it 'evaluates the movie lengths of [3, 8] for a 6 hour flight, and returns false' do
+      expect(subject.can_two_movies_fill_flight?([3, 8], 6)).to eq false
+    end
+
+    it 'evaluates the movie lengths of [3, 8, 3] for a 6 hour flight, and returns true' do
+      expect(subject.can_two_movies_fill_flight?([3, 8, 3], 6)).to eq true
     end
   end
 end
