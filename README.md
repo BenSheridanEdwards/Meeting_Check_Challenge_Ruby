@@ -2,15 +2,15 @@
 
 Table of Contents 
 
-### [Arrays]()
+### Arrays
 
 [Meeting Checker](#Meeting-Checker) | [Smallest Subset Length](#Smallest-Subset-Length) | [Girl Scout Cookie Orders](#Girl-Scout-Cookie-Orders)
 
-### [Strings]()
+### Strings
 
 [Reversing In-Place](#Reversing-In-Place)
 
-### [Hashes]()
+### Hashes
 
 ## <a name="Meeting-Checker">Meeting Checker</a>
 
