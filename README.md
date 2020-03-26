@@ -180,7 +180,7 @@ Your method should output:
 
 We could concatinate the arrays together, then sort the result: 
 
-![Girl Scout Cookie Order Simple Solution]()
+![Girl Scout Cookie Order Simple Solution](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRubySimpleCode.png)
 
 But the time cost would be O(n lg n), where n is the total length of our output array, the sum of the length of our inputs. 
 
@@ -202,8 +202,8 @@ So when we write our conditional statements, we'll have to have 4 cases, 2 to ch
 
 ### Solution
 
-![Girl Scout Cookies Code]()
+![Girl Scout Cookies Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRubyCode.png)
 
 ### Unit Tests
 
-![Girl Scout Cookies Tests]()
+![Girl Scout Cookies Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRSpecTesting.png)
