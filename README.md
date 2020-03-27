@@ -219,3 +219,46 @@ So when we write our conditional statements, we'll have to have 4 cases, 2 to ch
 ### Unit Tests
 
 ![Girl Scout Cookies Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRSpecTesting.png)
+
+## Inflight Entertainment
+
+### Description
+
+An airline has built an inflight entertainment system with on-demand movie streaming. But users on long flights are complaining that their plane usually lands before they can see the ending to their movie.
+
+You're tasked with building a feature for choosing two movies whose runtimes will equal the exact flight length. 
+
+Write a method that takes an integer, *flight_length* (in minutes) and an array of integers *movie_lengths* (in minutes) and returns a boolean indicating whether there are two numbers in *movie_lengths* whose sum equals *flight_length*. 
+
+Keep in mind: 
+
+- Assume your users will watch exactly two movies
+- Don't make your users watch the same movie twice
+- Optimize for runtime over memory
+
+### Explaination
+
+
+We know that when choosing two times from the *movie_length* list, we're looking for a *second_movie_length* that is equal to the *flight_length* - *first_movie_length*. We could nest two loops, the outer choosing the *first_movie_length* and the inner choosing the *second_movie_length*. That would give us a runtiem of O(n²) but we can do better.
+
+How could we check for the existence of our second_movie_legnth in constant time? 
+
+We need a data structure that gives us convenient constant-time lookups, like a set! 
+
+Throwing all our movie_lengths into a set first in linear O(n) time. We could then use a single loop to go through the possible first_movie_lengths, and check the set for the result of flight_length - first_movie_length. Giving us O(n) runtime overall.
+
+By also checking the movies we've already seen for matches before putting a movie in, we're ensuring users won't watch the same movie twice. 
+
+### Solution
+
+![Inflight Entertainment Code]()
+
+### Final Complexity
+
+Optimised for runtime by adding a small amount of space cost.
+- O(n) time
+- 0(n) space
+
+### Testing
+
+![Inflight Entertainment Testing]()
