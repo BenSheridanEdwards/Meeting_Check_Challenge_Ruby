@@ -6,6 +6,10 @@ describe InflightEntertainment do
     it 'evaluates the movie lengths of [2, 4] for a 6 hour flight, and returns true' do
       expect(subject.can_two_movies_fill_flight?([2, 4], 6)).to eq true
     end
+
+    it 'evaluates the movie lengths of [1, 2, 3, 4, 5, 6] for a 7 hour flight time' do
+      expect(subject.can_two_movies_fill_flight?([1, 2, 3, 4, 5, 6], 7)).to eq true
+    end
   end
 
   context 'when there is two movies that can not fill the flight time' do
