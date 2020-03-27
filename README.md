@@ -12,6 +12,8 @@ Table of Contents
 
 ### Hashes
 
+[Inflight Entertainment](#Inflight-Entertainment)
+
 ## <a name="Meeting-Checker">Meeting Checker</a>
 
 ### Challenge Description
@@ -220,7 +222,7 @@ So when we write our conditional statements, we'll have to have 4 cases, 2 to ch
 
 ![Girl Scout Cookies Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRSpecTesting.png)
 
-## Inflight Entertainment
+## <a name="Inflight-Entertainment">Inflight Entertainment</a>
 
 ### Description
 
