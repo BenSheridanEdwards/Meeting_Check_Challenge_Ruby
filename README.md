@@ -259,7 +259,7 @@ By also checking the movies we've already seen for matches before putting a movi
 
 Optimised for runtime by adding a small amount of space cost.
 - O(n) time
-- 0(n) space
+- O(n) space
 
 ### Testing
 
