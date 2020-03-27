@@ -253,7 +253,7 @@ By also checking the movies we've already seen for matches before putting a movi
 
 ### Solution
 
-![Inflight Entertainment Code]()
+![Inflight Entertainment Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/InflightEntertainmentRubyCode.png)
 
 ### Final Complexity
 
@@ -263,4 +263,4 @@ Optimised for runtime by adding a small amount of space cost.
 
 ### Testing
 
-![Inflight Entertainment Testing]()
+![Inflight Entertainment Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/InflightEntertainmentRSpecTesting.png)
