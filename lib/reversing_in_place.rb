@@ -14,10 +14,23 @@ class InPlace
 
   def reverse_words!(message)
     
+    reverse_characters!(message, 0, message.length - 1)
+
+    current_word_start_index = 0
+
+    (0..message.length).each do |index|
+
+      next unless index == message.length || message[index] == ' '
+
+      reverse_characters!(message, current_word_start_index, index - 1)
+
+      current_word_start_index = index + 1
+
+    end
+    message
   end
 
-
-  # Helper method for reverse_words!
+private
 
   def reverse_characters!(message, left_index, right_index)
 
@@ -26,7 +39,7 @@ class InPlace
         message[right_index], message[left_index]
 
       left_index += 1
-      right_index += 1
+      right_index -= 1
     end
   end
 end
