@@ -8,7 +8,7 @@ Table of Contents
 
 ### Strings
 
-[Reversing In-Place](#Reversing-In-Place)
+[Reversing In-Place](#Reversing-In-Place) | [Reverse Words](#Reverse-Words)
 
 ### Hashes
 
@@ -100,6 +100,45 @@ Your method should return:
 ### Unit Tests
 
 ![Reversing Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRSpecTesting.png)
+
+
+## Reverse Words
+
+### Description
+
+You're working on a secret team solving coded transmissions.
+
+Your team is scrambling to decipher a recent message, worried it's a plot to break into a major European National Cake Vault. The message has been mostly deciphered, but all the words are backward! Your colleagues have handed off the last step to you.
+
+Write a method reverse_words!() that takes a message as a string and reverses the order of the words in place.
+
+For example, with the input:
+`
+"cake pound steal"
+`
+
+Your method should print:
+`
+"steal pound cake"
+`
+
+#### Keep in mind
+
+- When writing your method, assume the message contains only letters and spaces, and all words are separated by one space.
+
+### Explanation
+
+
+
+### Solution
+
+![Reverse Words Code]()
+
+### Unit Tests
+
+![Reverse Words Tests]()
+
+
 
 ## Run Path
 
