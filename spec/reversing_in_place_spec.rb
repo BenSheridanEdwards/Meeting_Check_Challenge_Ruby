@@ -26,18 +26,16 @@ describe InPlace do
 
   describe '.reverse_words!' do
 
-  context 'when given a string with only words and spaces' do
-  
-    it "receives 'cake steal' and outputs 'steal cake'" do
-      expect(subject.reverse_words!('cake steal')).to eq 'steal cake'
+    context 'when given a string with only words and spaces' do
+    
+      it "receives 'cake steal' and outputs 'steal cake'" do
+        expect(subject.reverse_words!('cake steal')).to eq 'steal cake'
+      end
+
+      it "receives 'love pray eat' and outputs 'eat pray love'" do
+        expect(subject.reverse_words!('love pray eat')).to eq 'eat pray love'
+      end
+    
     end
-
-    it "receives 'love pray eat' and outputs 'eat pray love'" do
-      expect(subject.reverse_words!('love pray eat')).to eq 'eat pray love'
-    end
-  
-  end
-
-
   end
 end
