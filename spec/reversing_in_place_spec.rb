@@ -24,12 +24,12 @@ describe InPlace do
   end
 
 
-  describe '.reverse_words' do
+  describe '.reverse_words!' do
 
   context 'when given a string with only words and spaces' do
   
     it "receives 'cake steal' and outputs 'steal cake'" do
-      expect(subject.reverse_words!('cake pound steal')).to eq 'steal pound cake'
+      expect(subject.reverse_words!('cake steal')).to eq 'steal cake'
     end
 
     it "receives 'love pray eat' and outputs 'eat pray love'" do
