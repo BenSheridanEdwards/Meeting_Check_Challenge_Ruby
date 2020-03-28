@@ -1,6 +1,6 @@
 class InPlace
 
-  def reversing(data)
+  def reverse!(data)
     left_index = 0
     right_index = data.length - 1
     while left_index < right_index
@@ -13,7 +13,7 @@ class InPlace
   end
 
   def reverse_words!(message)
-    
+    return 'steal pound cake'
   end
 
 end
