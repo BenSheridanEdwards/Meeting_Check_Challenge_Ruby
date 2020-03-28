@@ -22,4 +22,8 @@ describe InPlace do
       end
     end
   end
+
+
+  describe '.reverse_words!' do
+  end
 end

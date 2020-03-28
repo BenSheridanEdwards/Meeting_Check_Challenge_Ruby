@@ -12,4 +12,8 @@ class InPlace
     data
   end
 
+  def reverse_words!(message)
+    
+  end
+
 end
