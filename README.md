@@ -338,10 +338,11 @@ Your method should print:
 
 ### Complexity
 
-Time: O(n)
-Space: O(1)
+Time: *O(n)*
 
-Time is O(n) as we have to walk through the entire length of the input string, and the words could all be different lengths. 
+Space: *O(1)*
+
+Time is *O(n)* as we have to walk through the entire length of the input string, and the words could all be different lengths. 
 
 Space is O(1) as it's in place. 
 
