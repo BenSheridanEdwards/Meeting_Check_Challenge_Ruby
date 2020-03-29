@@ -113,32 +113,28 @@ Your team is scrambling to decipher a recent message, worried it's a plot to bre
 Write a method reverse_words!() that takes a message as a string and reverses the order of the words in place.
 
 For example, with the input:
-`
+```
 "cake pound steal"
-`
+```
 
 Your method should print:
-`
+```
 "steal pound cake"
-`
+```
 
 #### Keep in mind
 
 - When writing your method, assume the message contains only letters and spaces, and all words are separated by one space.
 
-### Explanation
+### Tests
 
-
+![Reverse Words Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReverseWordsRSpecTesting.png)
 
 ### Solution
 
-![Reverse Words Code]()
+![Reverse Words Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReverseWordsRubyCode.png)
 
-### Unit Tests
-
-![Reverse Words Tests]()
-
-
+### Explanation
 
 ## Run Path
 
