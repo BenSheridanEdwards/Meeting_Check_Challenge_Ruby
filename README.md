@@ -38,7 +38,7 @@ Your method should return:
 [[0, 1], [3, 8], [9, 12]]
 ```
 
-### Things to keep in mind - Edge cases 
+### Additional Notes (Including Edge Cases) 
 
 - Do not assume the meetings are in order. As the meetings times are coming from multiple teams.
 
@@ -243,32 +243,12 @@ Your method should return:
 
 ![RunPath Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRSpecTesting.png)
 
+<a name="Reversing-In-Place"><br></a>
 
+## Reversing In-Place
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## <a name="Reversing-In-Place">Reversing In-Place</a>
-
-### Description 
-Write a method that takes an array or string and reverses the elements in place.
+### Challenge Description 
+Write a method that takes an array or string and reverses the elements *in place*.
 
 For example, given a string: 
 
@@ -292,28 +272,41 @@ Your method should return:
 ["E", "D", "C", "B", "A"]
 ```
 
-### Things to keep in mind
+### Additional Notes (Including Edge Cases)
 
 - An in-place method modifies data structures or objects outside of its own stack frame. Because of this, the changes made by the method remain after the call completes.
-  - In-place algorithms are sometimes called destructive, since the original input is "destroyed" (or modified) during the method call.
-  - Careful: "In-place" does not mean "without creating any additional variables!" Rather, it means "without creating a new copy of the input." In general, an in-place method will only create additional variables that are O(1) space.
+
+- In-place algorithms are sometimes called destructive, since the original input is "destroyed" (or modified) during the method call.
+  
+- Careful: "In-place" does not mean "without creating any additional variables!" Rather, it means "without creating a new copy of the input." In general, an in-place method will only create additional variables that are O(1) space.
   
 - An out-of-place method doesn't make any changes that are visible to other methods. Usually, those methods copy any data structures or objects before manipulating and changing them.
 
 - The elements is the string/array input will be letters, numbers or a mixture of both.
 
+### Tests
+
+![Reversing Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRSpecTesting.png)
+
 ### Solution
 
 ![Reversing Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRubyCode.png)
 
-### Unit Tests
+### Complexity
 
-![Reversing Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRSpecTesting.png)
+Time: *O(n)*
 
+Space: *O(1)*
+
+### Explaination
+
+Swap the first and last characters, then move inwards until reaching the middle. 
+
+<a name="Reverse-Words"><br></a>
 
 ## Reverse Words
 
-### Description
+### Challenge Description
 
 You're working on a secret team solving coded transmissions.
 
