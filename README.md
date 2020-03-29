@@ -416,8 +416,7 @@ Keep in mind:
 - Don't make your users watch the same movie twice
 - Optimize for runtime over memory
 
-### Explaination
-
+### Additional Notes
 
 We know that when choosing two times from the *movie_length* list, we're looking for a *second_movie_length* that is equal to the *flight_length* - *first_movie_length*. We could nest two loops, the outer choosing the *first_movie_length* and the inner choosing the *second_movie_length*. That would give us a runtiem of O(n²) but we can do better.
 
@@ -429,16 +428,24 @@ Throwing all our movie_lengths into a set first in linear O(n) time. We could th
 
 By also checking the movies we've already seen for matches before putting a movie in, we're ensuring users won't watch the same movie twice. 
 
+### Testing
+
+![Inflight Entertainment Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/InflightEntertainmentRSpecTesting.png)
+
 ### Solution
 
 ![Inflight Entertainment Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/InflightEntertainmentRubyCode.png)
 
-### Final Complexity
+### Complexity
 
 Optimised for runtime by adding a small amount of space cost.
 - O(n) time
 - O(n) space
 
-### Testing
+### Explanation
 
-![Inflight Entertainment Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/InflightEntertainmentRSpecTesting.png)
+We make one pass through movie_lengths, treating each item as the first_movie_length. At each iteration, we:
+
+1. See if there's a matching_second_movie_length we've seen already (stored in our movie_lengths_seen set) that is equal to flight_length - first_movie_length. If there is, we short-circuit and return true.
+
+2. Keep our movie_lengths_seen set up to date by throwing in the current first_movie_length.
