@@ -4,7 +4,7 @@ Table of Contents
 
 ### Arrays
 
-[Meeting Checker](#Meeting-Checker) | [Smallest Subset Length](#Smallest-Subset-Length) | [Girl Scout Cookie Orders](#Girl-Scout-Cookie-Orders) | [Cafe Order Checker](#Cafe-Order-Checker)
+[Meeting Checker](#Meeting-Checker) | [Smallest Subset Length](#Smallest-Subset-Length) | [Girl Scout Cookie Orders](#Girl-Scout-Cookie-Orders) | [Cafe Order Checker](#Cafe-Order-Checker) | [RunPath](#Run-Path)
 
 ### Strings
 
@@ -55,120 +55,6 @@ Your method should return:
 ![MeetingCheckerSpec](https://github.com/BenSheridanEdwards/Meeting_Check_Challenge_Ruby/blob/master/media/MeetingCheckerRSpecTesting.png)
 
 <br>
-
-## <a name="Reversing-In-Place">Reversing In-Place</a>
-
-### Description 
-Write a method that takes an array or string and reverses the elements in place.
-
-For example, given a string: 
-
-```
-"ABCDE"
-```
-
-Your method should return:
-
-```
-"EDCBA"
-```
-
-Also, when given an array: 
-```
-["A", "B", "C", "D", "E"]
-```
-
-Your method should return:
-```
-["E", "D", "C", "B", "A"]
-```
-
-### Things to keep in mind
-
-- An in-place method modifies data structures or objects outside of its own stack frame. Because of this, the changes made by the method remain after the call completes.
-  - In-place algorithms are sometimes called destructive, since the original input is "destroyed" (or modified) during the method call.
-  - Careful: "In-place" does not mean "without creating any additional variables!" Rather, it means "without creating a new copy of the input." In general, an in-place method will only create additional variables that are O(1) space.
-  
-- An out-of-place method doesn't make any changes that are visible to other methods. Usually, those methods copy any data structures or objects before manipulating and changing them.
-
-- The elements is the string/array input will be letters, numbers or a mixture of both.
-
-### Solution
-
-![Reversing Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRubyCode.png)
-
-### Unit Tests
-
-![Reversing Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRSpecTesting.png)
-
-
-## Reverse Words
-
-### Description
-
-You're working on a secret team solving coded transmissions.
-
-Your team is scrambling to decipher a recent message, worried it's a plot to break into a major European National Cake Vault. The message has been mostly deciphered, but all the words are backward! Your colleagues have handed off the last step to you.
-
-Write a method reverse_words!() that takes a message as a string and reverses the order of the words in place.
-
-For example, with the input:
-```
-"cake pound steal"
-```
-
-Your method should print:
-```
-"steal pound cake"
-```
-
-#### Keep in mind
-
-- When writing your method, assume the message contains only letters and spaces, and all words are separated by one space.
-
-### Tests
-
-![Reverse Words Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReverseWordsRSpecTesting.png)
-
-### Solution
-
-![Reverse Words Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReverseWordsRubyCode.png)
-
-### Explanation
-
-## Run Path
-
-### Description 
-
-Given the length of a path and a set of back and forth runs on this path, return the position on the path that is visited most often at the end of all runs. If there are multiple positions that meet this criterion, return the lowest position. 
-
-For example, when given:
-```
-path = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-runs = [2, 7, 3, 9, 1, 5]
-
-method(path, runs)
-```
-
-Your method should return:
-```
-3
-```
-### Explaination
-
-- The set of runs translates to: start at 2, run to 7; start at 7, run to 3; start at 3, run to 9; start at 9, run to 1; start at 1, run to 5. 
-- Note that each position is visited once when the run ends there and once when the run starts there, so for example when you run from 2 to 7 and then from 7 to 3, you have visited 7 twice. 
-- Given the above example, positions 3, 4 and 5 would all have been visited 5 times, which is the largest number of visits, but the program should return the lowest such positions, which is 3.
-
-### Solution
-
-![RunPath Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRubyCode.png)
-
-![RunPath Editor](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRubyEditor.png)
-
-### Unit Tests
-
-![RunPath Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRSpecTesting.png)
 
 ## <a name="Smallest-Subset-Length">Smallest Subset Length</a>
 
@@ -297,6 +183,141 @@ Served Orders: [1, 2, 4, 6, 5, 3]
 
 ### Explaination
 
+## <a name="Run-Path">Run Path</a>
+
+### Description 
+
+Given the length of a path and a set of back and forth runs on this path, return the position on the path that is visited most often at the end of all runs. If there are multiple positions that meet this criterion, return the lowest position. 
+
+For example, when given:
+```
+path = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+runs = [2, 7, 3, 9, 1, 5]
+
+method(path, runs)
+```
+
+Your method should return:
+```
+3
+```
+### Explaination
+
+- The set of runs translates to: start at 2, run to 7; start at 7, run to 3; start at 3, run to 9; start at 9, run to 1; start at 1, run to 5. 
+- Note that each position is visited once when the run ends there and once when the run starts there, so for example when you run from 2 to 7 and then from 7 to 3, you have visited 7 twice. 
+- Given the above example, positions 3, 4 and 5 would all have been visited 5 times, which is the largest number of visits, but the program should return the lowest such positions, which is 3.
+
+### Solution
+
+![RunPath Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRubyCode.png)
+
+![RunPath Editor](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRubyEditor.png)
+
+### Unit Tests
+
+![RunPath Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/RunPathRSpecTesting.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## <a name="Reversing-In-Place">Reversing In-Place</a>
+
+### Description 
+Write a method that takes an array or string and reverses the elements in place.
+
+For example, given a string: 
+
+```
+"ABCDE"
+```
+
+Your method should return:
+
+```
+"EDCBA"
+```
+
+Also, when given an array: 
+```
+["A", "B", "C", "D", "E"]
+```
+
+Your method should return:
+```
+["E", "D", "C", "B", "A"]
+```
+
+### Things to keep in mind
+
+- An in-place method modifies data structures or objects outside of its own stack frame. Because of this, the changes made by the method remain after the call completes.
+  - In-place algorithms are sometimes called destructive, since the original input is "destroyed" (or modified) during the method call.
+  - Careful: "In-place" does not mean "without creating any additional variables!" Rather, it means "without creating a new copy of the input." In general, an in-place method will only create additional variables that are O(1) space.
+  
+- An out-of-place method doesn't make any changes that are visible to other methods. Usually, those methods copy any data structures or objects before manipulating and changing them.
+
+- The elements is the string/array input will be letters, numbers or a mixture of both.
+
+### Solution
+
+![Reversing Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRubyCode.png)
+
+### Unit Tests
+
+![Reversing Testing](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReversingRSpecTesting.png)
+
+
+## Reverse Words
+
+### Description
+
+You're working on a secret team solving coded transmissions.
+
+Your team is scrambling to decipher a recent message, worried it's a plot to break into a major European National Cake Vault. The message has been mostly deciphered, but all the words are backward! Your colleagues have handed off the last step to you.
+
+Write a method reverse_words!() that takes a message as a string and reverses the order of the words in place.
+
+For example, with the input:
+```
+"cake pound steal"
+```
+
+Your method should print:
+```
+"steal pound cake"
+```
+
+#### Keep in mind
+
+- When writing your method, assume the message contains only letters and spaces, and all words are separated by one space.
+
+### Tests
+
+![Reverse Words Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReverseWordsRSpecTesting.png)
+
+### Solution
+
+![Reverse Words Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReverseWordsRubyCode.png)
+
+### Explanation
 
 ## <a name="Inflight-Entertainment">Inflight Entertainment</a>
 
