@@ -448,3 +448,26 @@ We make one pass through movie_lengths, treating each item as the first_movie_le
 1. See if there's a matching_second_movie_length we've seen already (stored in our movie_lengths_seen set) that is equal to flight_length - first_movie_length. If there is, we short-circuit and return true.
 
 2. Keep our movie_lengths_seen set up to date by throwing in the current first_movie_length.
+
+## Permutation Palindrome
+
+### Description
+
+Write an efficient method that checks whether any permutation of an input string is a palindrome.
+
+- You can assume the input string only contains lowercase letters
+
+### Additional Notes
+
+### Tests
+
+![Permutation Palindrome Testing]()
+
+### Solution
+
+![Permutation Palindrome Ruby Code]()
+
+### Complexity
+
+### Explanation
+
