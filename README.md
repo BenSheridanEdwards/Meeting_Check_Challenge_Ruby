@@ -59,6 +59,7 @@ Your method should return:
 ### Complexity
 
 Time: *O(n lg n)*
+
 Space *O(n)*
 
 Sorting the meetings first gives a runtime of *O(n lg n)*. 
