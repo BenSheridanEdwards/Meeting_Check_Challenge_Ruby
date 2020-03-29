@@ -7,7 +7,6 @@ class CafeOrderChecker
     take_out_max_index = take_out_orders.length - 1
     dine_in_max_index = dine_in_orders.length - 1
     
-    
     served_orders.each { |order|
       
       if take_out_index <= take_out_max_index && order == take_out_orders[take_out_index]
@@ -27,7 +26,8 @@ class CafeOrderChecker
     if dine_in_index != dine_in_orders.length || take_out_index != take_out_orders.length 
       return false
     end
-    
+
     true
   end
 end
+x
