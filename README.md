@@ -12,7 +12,7 @@ Table of Contents
 
 ### Hashes
 
-[Inflight Entertainment](#Inflight-Entertainment)
+[Inflight Entertainment](#Inflight-Entertainment) | [Permutation Palindrome](#Permutation-Palindrome)
 
 <a name="Meeting-Checker"><br></a>
 
@@ -58,9 +58,9 @@ Your method should return:
 
 ### Complexity
 
-Time: *O(n lg n)*
+- O(n lg n) Time
 
-Space *O(n)*
+- O(n) Space
 
 Sorting the meetings first gives a runtime of *O(n lg n)*. 
 
@@ -172,9 +172,10 @@ So when we write our conditional statements, we'll have to have 4 cases, 2 to ch
 
 ### Complexity
 
-Time: *O(n)* 
+- O(n) Time
+- O(n) Space
 
-Space: *O(n)* (n = number of items in the merged array)
+Where n is the number of items in the merged array
 
 ### Explaination
 
@@ -238,9 +239,8 @@ Served Orders: [1, 2, 4, 6, 5, 3]
 
 ### Complexity
 
-Time: *O(n)*
-
-Space: *O(1)* additional space
+- O(n) Time
+- O(1) Space
 
 ### Explaination
 
@@ -338,9 +338,8 @@ Your method should return:
 
 ### Complexity
 
-Time: *O(n)*
-
-Space: *O(1)*
+- O(n) Time
+- O(1) Space
 
 ### Explaination
 
@@ -382,9 +381,8 @@ Your method should print:
 
 ### Complexity
 
-Time: *O(n)*
-
-Space: *O(1)*
+- O(n) Time
+- O(1) Space
 
 Time is *O(n)* as we have to walk through the entire length of the input string, and the words could all be different lengths. 
 
@@ -438,9 +436,10 @@ By also checking the movies we've already seen for matches before putting a movi
 
 ### Complexity
 
-Optimised for runtime by adding a small amount of space cost.
 - O(n) time
 - O(n) space
+
+Optimised for runtime by adding a small amount of space cost.
 
 ### Explanation
 
