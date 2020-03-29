@@ -1,0 +1,2 @@
+class CafeOrderChecker
+end
