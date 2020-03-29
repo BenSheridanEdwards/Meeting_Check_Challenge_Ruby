@@ -132,12 +132,13 @@ merge_arrays(my_array, alices_array)
 ```
 
 Your method should output: 
+
 ```
 [1, 3, 4, 5, 6, 8, 10, 11, 12, 14, 15, 19]
 
 ```
 
-### Explaination
+### Addtional Notes (Including edge cases)
 
 We could concatinate the arrays together, then sort the result: 
 
@@ -161,15 +162,39 @@ For all these edge cases, there will be a point when the 0th value on one of our
 
 So when we write our conditional statements, we'll have to have 4 cases, 2 to check which item is next from the 0th index of each array, and 2 to check if either array is exhausted.
 
-### Solution
-
-![Girl Scout Cookies Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRubyCodeDRY.png)
-
 ### Unit Tests
 
 ![Girl Scout Cookies Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRSpecTesting.png)
 
-## <a name="Cafe-Order-Checker">Cafe Order Checker</a>
+### Solution
+
+![Girl Scout Cookies Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRubyCodeDRY.png)
+
+### Complexity
+
+Time: *O(n)* 
+
+Space: *O(n)* (n = number of items in the merged array)
+
+### Explaination
+
+First, we allotcast our answer array, getting its size by adding the size of `my_array` and `alices_array`.
+
+Keeping track of the current index of `my_array`, `alices_array`, and the `merged_array`. At each step, there's a current element in `my_array` and `alices_array`, the smaller of which is added to the merged_array. 
+
+In our code we're also accounting for the edge case that we may exhaust one of our arrays whilst there are still elements in the order - So we only add the next element to merged_array from either my_array or alices_array if the respective array is not exhausted, and either: 
+
+A. the other array is exhausted.
+
+or 
+
+B. the current element in the respective array is less than the current element in the other array. 
+
+The if statement is constructed to take advantage of Ruby's short circuit evaluation to check first the arrays are exhausted - So to avoid indexing past the end of an array, and Ruby doesn't throw a NoMethodError or ArgumentError when we try to compare nil with an integer or vice versa.
+
+<a name="Cafe-Order-Checker"><br></a>
+
+## Cafe Order Checker
 
 ### Description
 
@@ -205,7 +230,11 @@ Served Orders: [1, 2, 4, 6, 5, 3]
 
 ### Tests
 
+![Cafe Order Checker Tests]()
+
 ### Solution
+
+![Cafe Order Checker Code]()
 
 ### Explaination
 
