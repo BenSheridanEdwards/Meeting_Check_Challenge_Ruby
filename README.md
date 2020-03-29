@@ -230,11 +230,11 @@ Served Orders: [1, 2, 4, 6, 5, 3]
 
 ### Tests
 
-![Cafe Order Checker Tests]()
+![Cafe Order Checker Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CafeOrderCheckerRSpecTesting.png)
 
 ### Solution
 
-![Cafe Order Checker Code]()
+![Cafe Order Checker Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CafeOrderCheckerRubyCode.png)
 
 ### Explaination
 
