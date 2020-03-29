@@ -236,7 +236,22 @@ Served Orders: [1, 2, 4, 6, 5, 3]
 
 ![Cafe Order Checker Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CafeOrderCheckerRubyCode.png)
 
+### Complexity
+
+Time: *O(n)*
+
+Space: *O(1)* additional space
+
 ### Explaination
+
+We walk through served_orders, seeing if each customer order so far matches a customer order from one of the two registers. To check this, we:
+
+1. Keep pointers to the current index in take_out_orders, dine_in_orders, and served_orders.
+2. Walk through served_orders from beginning to end.
+3. If the current order in served_orders is the same as the current customer order in take_out_orders, increment take_out_orders_index and keep going. This can be thought of as "checking off" the current customer order in take_out_orders and served_orders, reducing the problem to the remaining customer orders in the arrays.
+4. Same as above with dine_in_orders.
+5. If the current order isn't the same as the customer order at the front of take_out_orders or dine_in_orders, we know something's gone wrong and we're not serving food first-come, first-served.
+6. If we make it all the way to the end of served_orders, we'll check that we've reached the end of take_out_orders and dine_in_orders. If every customer order checks out, that means we're serving food first-come, first-served.
 
 ## <a name="Run-Path">Run Path</a>
 
