@@ -14,7 +14,9 @@ Table of Contents
 
 [Inflight Entertainment](#Inflight-Entertainment)
 
-## <a name="Meeting-Checker">Meeting Checker</a>
+<a name="Meeting-Checker"><br></a>
+
+## Meeting Checker
 
 ### Challenge Description
 
@@ -42,17 +44,40 @@ Your method should return:
 
 - Your solution should be efficient even when we can't put an upper bound on the numbers in our time ranges. Like if we wanted to use Unix timestamps. 
 
-- Meetings that 'touch' like this [[1, 2], [2, 3]] should be merged.
+- Meetings that 'touch' like this `[[1, 2], [2, 3]]` should be merged.
 
 - When a meeting starts before and ends after another meeting, it should correctly subsume that meeting. 
+
+### Tests
+
+![MeetingCheckerSpec](https://github.com/BenSheridanEdwards/Meeting_Check_Challenge_Ruby/blob/master/media/MeetingCheckerRSpecTesting.png)
 
 ### Solution
 
 ![MeetingChecker](https://github.com/BenSheridanEdwards/Meeting_Check_Challenge_Ruby/blob/master/media/MeetingCheckerRubyCode.png)
 
-### Unit Tests
+### Complexity
 
-![MeetingCheckerSpec](https://github.com/BenSheridanEdwards/Meeting_Check_Challenge_Ruby/blob/master/media/MeetingCheckerRSpecTesting.png)
+Time: *O(n lg n)*
+Space *O(n)*
+
+Sorting the meetings first gives a runtime of *O(n lg n)*. 
+
+Note, best-case scenario is that the array is already in order, so we'd skip the sort and do it in *O(n)* time.
+
+Creating a new array for merged_meetings, where if none of the meetings overlaped, we'd have a worst-case space cost of *O(n)*.
+
+### Walkthrough Explaination
+
+First, we sort our input array so any meetings that might need to be merged are next to each other. 
+
+Then we walk through our soted meetings from left to right, at each step we either: 
+
+A. We can merge the current meeting with the previous one as they overlap of are touching. So we do, ensuring we have the earliest start time and latest end time of the two meetings for the combined meeting. 
+
+or
+
+B. We can't merge the current meeting with the previous one, so we add that meeting to merged_meetings. 
 
 <br>
 
