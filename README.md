@@ -4,7 +4,7 @@ Table of Contents
 
 ### Arrays
 
-[Meeting Checker](#Meeting-Checker) | [Smallest Subset Length](#Smallest-Subset-Length) | [Girl Scout Cookie Orders](#Girl-Scout-Cookie-Orders)
+[Meeting Checker](#Meeting-Checker) | [Smallest Subset Length](#Smallest-Subset-Length) | [Girl Scout Cookie Orders](#Girl-Scout-Cookie-Orders) | [Cafe Order Checker](#Cafe-Order-Checker)
 
 ### Strings
 
@@ -260,6 +260,47 @@ So when we write our conditional statements, we'll have to have 4 cases, 2 to ch
 ### Unit Tests
 
 ![Girl Scout Cookies Tests](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/CookieOrdersRSpecTesting.png)
+
+## <a name="Cafe-Order-Checker">Cafe Order Checker</a>
+
+### Description
+
+My cake shop is so popular, I'm adding some tables and hiring wait staff so folks can have a cute sit-down cake-eating experience.
+
+I have two registers: one for take-out orders, and the other for the other folks eating inside the cafe. All the customer orders get combined into one list for the kitchen, where they should be handled first-come, first-served.
+
+Recently, some customers have been complaining that people who placed orders after them are getting their food first. Yikes—that's not good for business!
+
+To investigate their claims, one afternoon I sat behind the registers with my laptop and recorded:
+
+- The take-out orders as they were entered into the system and given to the kitchen. (take_out_orders)
+- The dine-in orders as they were entered into the system and given to the kitchen. (dine_in_orders)
+- Each customer order (from either register) as it was finished by the kitchen. (served_orders)
+
+Given all three arrays, write a method to check that my service is first-come, first-served. All food should come out in the same order customers requested it.
+
+For example, with this input:
+
+```
+Take Out Orders: [1, 3, 5]
+Dine In Orders: [2, 4, 6]
+Served Orders: [1, 2, 4, 6, 5, 3]
+```
+*This would not be first-come first-served, since order 3 was requested before order 5 but order 5 was served first.*
+
+```
+ Take Out Orders: [1, 3, 5]
+ Dine In Orders: [2, 4, 6]
+ Served Orders: [1, 2, 3, 5, 4, 6]
+```
+*This would be first-come, first-served.*
+
+### Tests
+
+### Solution
+
+### Explaination
+
 
 ## <a name="Inflight-Entertainment">Inflight Entertainment</a>
 
