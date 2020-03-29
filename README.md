@@ -324,7 +324,7 @@ Your method should print:
 "steal pound cake"
 ```
 
-#### Keep in mind
+#### Additional Notes
 
 - When writing your method, assume the message contains only letters and spaces, and all words are separated by one space.
 
@@ -336,9 +336,26 @@ Your method should print:
 
 ![Reverse Words Code](https://github.com/BenSheridanEdwards/Ruby_Data_Structure_Challenges/blob/master/media/ReverseWordsRubyCode.png)
 
-### Explanation
+### Complexity
 
-## <a name="Inflight-Entertainment">Inflight Entertainment</a>
+Time: O(n)
+Space: O(1)
+
+Time is O(n) as we have to walk through the entire length of the input string, and the words could all be different lengths. 
+
+Space is O(1) as it's in place. 
+
+### Walkthrough Explanation
+
+We use a helper method reverse_characters!() that reverses all the characters between a given left and right index. 
+
+We first use it to reverse all the characters in the entire message - As this gives us the correct word order, but with each word backward.
+
+Then we use it again to reverse the characters in each individual word.
+
+<a name="Inflight-Entertainment"><br></a>
+
+## Inflight Entertainment
 
 ### Description
 
