@@ -469,5 +469,7 @@ Write an efficient method that checks whether any permutation of an input string
 
 ### Complexity
 
+O(n) time, since we're making one iteration through the nn characters in the string.
+
 ### Explanation
 
